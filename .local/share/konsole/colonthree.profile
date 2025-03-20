@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=Catppuccin-Macchiato
+ColorScheme=catppuccin-mocha
 Font=JetBrainsMono Nerd Font,10,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold
 
 [Cursor Options]
