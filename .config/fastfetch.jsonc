@@ -1,20 +1,89 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "break",
-    "uptime",
-    "shell",
-    "memory",
-    "break",
-    "terminal",
-    "cpu",
-    "gpu",
-    "wm",
-    "separator"
-  ]
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "color": {
+            "1": "black",
+            "2": "white"
+        }
+    },
+    "display": {
+        "separator": ": ",
+        "color": {
+            "keys": "magenta",
+            "title": "magenta"
+        }
+    },
+    "modules": [
+        "title",
+        {
+            "type": "custom",
+            "format": "──────────────────────────",
+            "outputColor": "black"
+        },
+
+        //  HARDWARE
+        {
+            "type": "host",
+            "key": "Host",
+            "format": "{family} ({vendor})"
+        },
+        {
+            "type": "cpu",
+            "key": "CPU",
+            "format": "{name}"
+        },
+        {
+            "type": "gpu",
+            "key": "GPU",
+            "format": "{vendor} {name} ({type})"
+        },
+        {
+            "type": "memory",
+            "key": "RAM",
+            "format": "{used} | {total}"
+        },
+        "break",
+
+        // SOFTWARE
+        {
+            "type": "os",
+            "key": "Distro",
+            "format": "{name}"
+        },
+        {
+            "type": "kernel",
+            "key": "Kernel"
+        },
+        {
+            "type": "shell",
+            "key": "Shell",
+            "format": "{exe}"
+        },
+        {
+            "type": "terminal",
+            "key": "Terminal",
+            "format": "{pretty-name}"
+        },
+        "break",
+
+        // OTHER
+        {
+            "type": "localip",
+            "key": "Local IP"
+        },
+        {
+            "type": "uptime",
+            "key": "Uptime"
+        },
+        {
+            "type": "datetime",
+            "key": "Time",
+            "format": "{year}-{month-pretty}-{day-pretty} | {hour-pretty}:{minute-pretty} {timezone-name}"
+        },
+        // "break",
+        {
+            "type": "custom",
+            "format": "──────────────────────────"
+        }
+    ]
 }
