@@ -1,12 +1,12 @@
 {
-    "preset": "lesbian",
+    "preset": "transgender",
     "mode": "rgb",
     "light_dark": "dark",
-    "lightness": 0.69,
+    "lightness": 0.75,
     "color_align": {
-        "mode": "vertical",
+        "mode": "horizontal",
         "custom_colors": [],
-        "fore_back": []
+        "fore_back": [2, 1]
     },
     "backend": "neofetch",
     "args": null,
