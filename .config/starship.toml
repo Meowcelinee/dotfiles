@@ -263,8 +263,8 @@ symbol = " "
 
 [sudo]
 format = "[$symbol]($style)"
-style = "bold green"
-symbol = " "
+style = "bold italic green"
+symbol = "# "
 disabled = false
 
 [swift]
