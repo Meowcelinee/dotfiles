@@ -4,6 +4,7 @@ export VISUAL="nano"
 export TERMINAL="konsole"
 export N_PREFIX="$HOME/.local/share/n"
 export PROJECT_DIR="$HOME/projects"
+export INSTANCE="$HOME/.local/share/PrismLauncher/instances/colon-three/"
 
 ### XDG
 
