@@ -11,6 +11,7 @@ alias cnode='clear && node'
 alias e='exit'
 alias gp='git pull --rebase'
 alias l='ls -al'
+alias off='systemctl poweroff'
 alias playing="playerctl metadata --format '{{artist}} - {{ title}}'"
 alias pubip='curl https://ipv4.icanhazip.com'
 alias pwease='sudo'
