@@ -1,6 +1,7 @@
 [Appearance]
 ColorScheme=catppuccin-mocha
-Font=JetBrains Mono Medium,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
+Font=JetBrainsMono Nerd Font,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+WordMode=true
 
 [Cursor Options]
 CursorShape=2
