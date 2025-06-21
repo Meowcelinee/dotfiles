@@ -26,19 +26,18 @@ esac
 export PATH=$PATH:/home/m/.spicetify
 
 # pnpm
-if [ -d /home/marceline ]
-then
-    export PNPM_HOME="/home/marceline/.local/share/pnpm"
-    case ":$PATH:" in
-      *":$PNPM_HOME:"*) ;;
-      *) export PATH="$PNPM_HOME:$PATH" ;;
-    esac
-elif [ -d /home/m ]
-then
-    export PNPM_HOME="/home/m/.local/share/pnpm"
-    case ":$PATH:" in
-        *":$PNPM_HOME:"*) ;;
-        *) export PATH="$PNPM_HOME:$PATH" ;;
-    esac
-fi
+#if [ -d /home/marceline ]
+#then
+#    export PNPM_HOME="/home/marceline/.local/share/pnpm"
+#    case ":$PATH:" in
+#      *":$PNPM_HOME:"*) ;;
+#      *) export PATH="$PNPM_HOME:$PATH" ;;
+#    esac
+#else
+#    export PNPM_HOME="/home/m/.local/share/pnpm"
+#    case ":$PATH:" in
+#        *":$PNPM_HOME:"*) ;;
+#        *) export PATH="$PNPM_HOME:$PATH" ;;
+#    esac
+#fi
 # pnpm end
