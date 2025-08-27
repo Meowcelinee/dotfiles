@@ -1,10 +1,10 @@
 format = """
+$username\
 $directory\
 $localip\
 $shlvl\
 $shell\
 $env_var\
-$username\
 $singularity\
 $kubernetes\
 $vcsh\
