@@ -1,2 +1,3 @@
 .local/share/konsole/konsolestaterc
 assets/zsh/.zcompdump
+env.sh
