@@ -1,4 +1,7 @@
 source $ZDOTDIR/.aliases.zsh
+source ../../../env.sh
+
+alias qc='ssh $QC_SSH_PARAMS'
 
 # initialize starship
 eval "$(starship init zsh)"
@@ -26,6 +29,7 @@ esac
 export PATH=$PATH:/home/m/.spicetify
 
 # pnpm
+<<<<<<< HEAD
 #if [ -d /home/marceline ]
 #then
 #    export PNPM_HOME="/home/marceline/.local/share/pnpm"
@@ -40,4 +44,21 @@ export PATH=$PATH:/home/m/.spicetify
 #        *) export PATH="$PNPM_HOME:$PATH" ;;
 #    esac
 #fi
+=======
+# if [ -d /home/marceline ]
+# then
+#     export PNPM_HOME="/home/marceline/.local/share/pnpm"
+#     case ":$PATH:" in
+#       *":$PNPM_HOME:"*) ;;
+#       *) export PATH="$PNPM_HOME:$PATH" ;;
+#     esac
+# elif [ -d /home/m ]
+# then
+#     export PNPM_HOME="/home/m/.local/share/pnpm"
+#     case ":$PATH:" in
+#         *":$PNPM_HOME:"*) ;;
+#         *) export PATH="$PNPM_HOME:$PATH" ;;
+#     esac
+# fi
+>>>>>>> 3ef7eaf (this doesnt work yet but i need to pull)
 # pnpm end
