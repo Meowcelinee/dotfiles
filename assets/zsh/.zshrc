@@ -1,7 +1,8 @@
 source $ZDOTDIR/.aliases.zsh
-source ../../../env.sh
 
-alias qc='ssh $QC_SSH_PARAMS'
+# load sensitive information from an external zsh file -- DO NOT TRACK THIS FILE
+source $ZDOTDIR/.env.zsh
+alias qc='ssh $QC_USER@$QC_HOSTNAME -p $QC_PORT'
 
 # initialize starship
 eval "$(starship init zsh)"
