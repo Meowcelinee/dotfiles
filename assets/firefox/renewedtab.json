@@ -2,15 +2,15 @@
     "background": {
         "mode": "ImageUrl",
         "values": {
-            "url": "https://i.imgur.com/PdLqSBa.jpeg",
-            "position": "bottom",
+            "url": "https://i.imgur.com/8Nx6jSw.png",
+            "position": "center",
             "brightnessDark": 100,
-            "blur": 2,
+            "blur": 6,
             "cacheExpiry": 1,
             "brightnessLight": 80
         }
     },
-    "grid_settings": { "fullPage": false, "columns": 15, "spacing": 15 },
+    "grid_settings": { "fullPage": true, "columns": 16, "spacing": 32 },
     "locked": false,
     "name": "Marceline",
     "review_request": {
@@ -29,9 +29,13 @@
         {
             "id": 1,
             "type": "Clock",
-            "position": { "__type__": "vec2", "x": 0, "y": 0 },
-            "size": { "__type__": "vec2", "x": 15, "y": 2 },
-            "props": { "showSeconds": true, "hour12": true, "dateStyle": 0 },
+            "position": { "__type__": "vec2", "x": 5, "y": 1 },
+            "size": { "__type__": "vec2", "x": 6, "y": 2 },
+            "props": {
+                "showSeconds": true,
+                "hour12": false,
+                "dateStyle": "ISO"
+            },
             "theme": {
                 "showPanelBG": false,
                 "listBoxStyle": 0,
@@ -43,21 +47,21 @@
         {
             "id": 2,
             "type": "Greeting",
-            "position": { "__type__": "vec2", "x": 0, "y": 2 },
-            "size": { "__type__": "vec2", "x": 15, "y": 1 },
+            "position": { "__type__": "vec2", "x": 5, "y": 3 },
+            "size": { "__type__": "vec2", "x": 6, "y": 1 },
             "props": {},
             "theme": {
                 "showPanelBG": false,
                 "listBoxStyle": 0,
                 "showText": true,
-                "fontScaling": 100
+                "fontScaling": 80
             }
         },
         {
-            "id": 3,
+            "id": 18,
             "type": "Search",
-            "position": { "__type__": "vec2", "x": 0, "y": 3 },
-            "size": { "__type__": "vec2", "x": 15, "y": 1 },
+            "position": { "__type__": "vec2", "x": 4, "y": 4 },
+            "size": { "__type__": "vec2", "x": 8, "y": 1 },
             "props": {
                 "useBrowserEngine": true,
                 "searchTitle": "Google",
@@ -68,38 +72,50 @@
                 "showPanelBG": true,
                 "listBoxStyle": 0,
                 "showText": true,
-                "fontScaling": 100,
-                "useIconBar": false
+                "fontScaling": 100
             }
         },
         {
             "id": 5,
             "type": "Links",
-            "position": { "__type__": "vec2", "x": 0, "y": 4 },
-            "size": { "__type__": "vec2", "x": 5, "y": 3 },
+            "position": { "__type__": "vec2", "x": 1, "y": 5 },
+            "size": { "__type__": "vec2", "x": 14, "y": 2 },
             "props": {
                 "links": [
                     {
+                        "id": "79e2d269-636b-4571-9c44-2b93b6fa8dc9",
+                        "title": "Tech Jira",
+                        "icon": "",
+                        "url": "https://prismcharity.atlassian.net/jira/your-work"
+                    },
+                    {
                         "id": "6fd90cc7-8e0d-4f65-b092-7e6f23dd4181",
-                        "title": "Github",
+                        "title": "GitHub",
                         "icon": "",
                         "url": "https://github.com/"
                     },
                     {
                         "id": "41b7712e-11db-44be-935a-5a06ec373b53",
-                        "title": "Destiny Item Manager",
+                        "title": "DIM",
                         "url": "https://app.destinyitemmanager.com/"
                     },
                     {
                         "id": "5fb76b49-b18a-43d0-999b-dfc118943160",
-                        "title": "Tailwind Docs",
-                        "url": "https://tailwindcss.com/docs/"
+                        "title": "AMP",
+                        "url": "https://amp.queercraft.net/",
+                        "icon": ""
                     },
                     {
                         "id": "36a224e0-b79d-499e-93cc-abaf29798127",
-                        "title": "Youtube Music",
+                        "title": "Youtube",
                         "icon": "",
-                        "url": "https://music.youtube.com/"
+                        "url": "https://youtube.com/"
+                    },
+                    {
+                        "id": "0ecacdac-c591-431f-910e-b9c9b147bfab",
+                        "title": "skys etsy",
+                        "icon": "",
+                        "url": "https://artby5klr.etsy.com/"
                     }
                 ],
                 "openInNewTab": false,
@@ -107,23 +123,8 @@
                 "enableCustomIcons": true
             },
             "theme": {
-                "showPanelBG": true,
-                "listBoxStyle": "Vertical",
-                "showText": true,
-                "fontScaling": 100
-            }
-        },
-        {
-            "id": 9,
-            "type": "HTML",
-            "position": { "__type__": "vec2", "x": 5, "y": 4 },
-            "size": { "__type__": "vec2", "x": 5, "y": 1 },
-            "props": {
-                "html": "<!-- this is so stupid lmfao -->\n<!--\n<style>\n\n* { color: #cad3f5; }\na { color: #f5bde6 !important; filter: brightness(92%); }\ninput.invisible { color: #f5bde6 !important; }\na:hover { filter: brightness(120%); }\n\n</style>\n-->"
-            },
-            "theme": {
                 "showPanelBG": false,
-                "listBoxStyle": 0,
+                "listBoxStyle": "Icons",
                 "showText": true,
                 "fontScaling": 100
             }
@@ -131,8 +132,8 @@
         {
             "id": 11,
             "type": "Weather",
-            "position": { "__type__": "vec2", "x": 10, "y": 4 },
-            "size": { "__type__": "vec2", "x": 5, "y": 3 },
+            "position": { "__type__": "vec2", "x": 1, "y": 7 },
+            "size": { "__type__": "vec2", "x": 14, "y": 3 },
             "props": {
                 "location": {
                     "key": "2208164",
@@ -145,20 +146,20 @@
                 "display": {
                     "showCurrent": true,
                     "showFeelsLike": true,
-                    "showPrecipitation": true,
+                    "showPrecipitation": false,
                     "showHumidity": false,
                     "showWind": false,
                     "showUV": false,
                     "showSunriseSunset": false,
-                    "showHourlyForecast": false,
+                    "showHourlyForecast": true,
                     "showDailyForecast": false
                 }
             },
             "theme": {
-                "showPanelBG": true,
+                "showPanelBG": false,
                 "listBoxStyle": 0,
                 "showText": true,
-                "fontScaling": 100
+                "fontScaling": 90
             }
         }
     ]
