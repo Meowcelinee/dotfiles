@@ -1,6 +1,6 @@
 [user]
-	email = nyatalieeee@proton.me
-	name = Marceline Raine
+	email = meowcelinee@gmail.com
+	name = Marceline
 	signingKey = /home/m/.ssh/id_ed25519.pub
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
@@ -8,6 +8,8 @@
 [credential "https://gist.github.com"]
 	helper = !/usr/bin/gh auth git-credential
 	provider = generic
+[credential "https://git.gay"]
+    provider = generic
 [gpg]
 	format = ssh
 [commit]
