@@ -1,9 +1,7 @@
 alias ff='clear && fastfetch -c ~/.config/fastfetch.jsonc'
-alias gae='clear && hyfetch'
-alias nf='clear && neofetch'
+alias fagfetch='clear && hyfetch'
 alias pwease='sudo'
 alias snf='sudo clear && sudo neofetch'
-alias :3="echo ':3'"
 
 alias c='clear'
 alias cl='clear && ls -al'
@@ -14,9 +12,6 @@ alias l='ls -al'
 alias off='systemctl poweroff'
 alias playing="playerctl metadata --format '{{artist}} - {{ title}}'"
 alias pubip='curl https://ipv4.icanhazip.com'
-alias pwease='sudo'
-alias sysrq='cat /proc/sys/kernel/sysrq'
-alias set-sysrq="echo '1' | sudo tee /proc/sys/kernel/sysrq"
 
 alias whatami='hostname'
 alias whereami='pwd'
